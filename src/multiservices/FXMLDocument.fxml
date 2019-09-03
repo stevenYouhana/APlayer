@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multiservices.FXMLDocumentController">
+    <children>
+        <Button layoutX="126" layoutY="400" text="ON" onAction="#Start" fx:id="btnOn" />
+        <Slider layoutX="10" layoutY="130" prefWidth="300"  fx:id="slTrackTime" />
+        <Button layoutX="126" layoutY="100" text="PLAY" onAction="#playpause" fx:id="btnPlay"/>
+        <Button layoutX="126" layoutY="160" text="CUE" onAction="#cue" fx:id="btnCue"/>
+        <TextField layoutX="10" layoutY="160"  fx:id="txtCue" prefWidth="100" />
+        <Button layoutX="126" layoutY="50" text="STOP" onAction="#stop" fx:id="btnStop"/>
+        
+        <Label layoutX="126" layoutY="30" minHeight="16" minWidth="69" fx:id="lblStatus" />
+        <Label layoutX="10" layoutY="10" minHeight="16" minWidth="16" fx:id="lblFlash" />
+    </children>
+</AnchorPane>
